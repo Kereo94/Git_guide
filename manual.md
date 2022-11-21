@@ -83,5 +83,25 @@ git tag -a tagnanme -m "description".
 ## Синхронизация изменений
 
 ## Слияние и перебазация
-
+Слияние ветви с текущей ветвью:
+git merge branchname.
+Слияние удаленной ветви с текущей ветвью:
+git pull origin branchname.
+Перебазируйте текущую ветвь в журнал другой ветви:
+igt rebase branchname.
+Выполнить интерактивное перебазовку последних n фиксаций:
+* git rebase -i HEAD ~n (Linux и macOS)
+* git rebase -i "HEAD^n" (Windows).
+Выбор фиксации в текущей ветви:
+git cherry-pik commitID.
+Отмена всех изменений и откат к последней фиксации:
+git reset --hard HEAD.
+Отмена промежуточного хранения файлов, но сохранение изменений файлов:
+git reset --mixed HEAD.
+Удоаление неотслеженных файлов:
+git clean -f.
+Сброс локальной ветви до последней фиксации в удаленной ветви:
+git reset --hard Удаленного/branchname (например, git reset --hard origin/main).
+Отмена фиксации, отправленной в удаленный репозиторий:
+git revert commitID.
 
