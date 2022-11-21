@@ -37,6 +37,10 @@
 ## Работа с Git-репозиториями
 
 ## Ветви
+Создание ветви: git branch branchname.
+Переключение на другую ветвь: git checkout branchname.
+Создание и переключние на новую ветвь: git checkout -b branchname.
+Удаление локальной ветви: git branch -d branchname.
 
 ## Фиксации
 
