@@ -41,8 +41,8 @@
 * git add --all
 * git commit -m "Initial commit".
 Создание репозитория из существующего решения Visual Studio:
-* git initFoldername
-* cdFoldername
+* git init *Foldername*
+* cd *Foldername*
 * git add --all
 * git commit -m "Initial commit".
 Клонироввание репозитория в локальную папку: git clone Имя *папки URL-адреса*.
