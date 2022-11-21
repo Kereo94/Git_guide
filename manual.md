@@ -35,7 +35,19 @@
 * git config --global user.email ваша почта@example.com *регистрирует почту в системе*.
 * git config --global user.name «Ваше имя английскими буквами» *регистрирует ваше имя в системе*.
 ## Работа с Git-репозиториями
-
+Создание репозитория в новой папке: git init.
+Создание репозитория с кодом  существующей попке:
+* git initFoldername
+* git add --all
+* git commit -m "Initial commit".
+Создание репозитория из существующего решения Visual Studio:
+* git initFoldername
+* cdFoldername
+* git add --all
+* git commit -m "Initial commit".
+Клонироввание репозитория в локальную папку: git clone Имя *папки URL-адреса*.
+Добавление удаленного репозитория: git remote add *URL-адрес имени*.
+Обновление удаленного репозитория: git remote set-url *URL-адрес имени*.
 ## Ветви
 
 ## Фиксации
