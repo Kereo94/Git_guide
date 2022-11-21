@@ -49,6 +49,14 @@
 Добавление удаленного репозитория: git remote add *URL-адрес имени*.
 Обновление удаленного репозитория: git remote set-url *URL-адрес имени*.
 ## Ветви
+Создание ветви: git branch branchname.
+Переключение на другую ветвь: git checkout branchname.
+Создание и переключние на новую ветвь: 
+git checkout -b branchname.
+Удаление локальной ветви: 
+git branch -d branchname.
+Удаление удаленной ветви:
+git push origin --delete branchname.
 
 ## Фиксации
 
