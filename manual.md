@@ -113,10 +113,12 @@ git add имя_файла.
 git status --untracked.
 
 удаление файла:
+
 * git rm имя_файла
 * git commit -m имя_файла.
 
 Перемещение файла:
+
 * fit mv имя_файла
 * git commit -m "Перещено имя файла".
 
@@ -125,6 +127,7 @@ git status --untracked.
 git tag -a tagnanme -m "description".
 
 ### Список всех имеющихся коммитов
+
 Чтобы просмотреть историю всех коммитов, необходимо набрать команду:
 
 git log
@@ -140,6 +143,7 @@ git log -p -1.
 *-1 отвечает за колитчество коммитов*.
 
 ## Сравнение файлов и версий
+
 Сравнение текущего содержимого одного файла и содержимого последней фиксации:
 
 git diff head имя_файла
@@ -151,7 +155,9 @@ git diff branchname.
 Сравнение изменений между двумя ветвями:
 
 git diff branchname1 branchname2.
+
 ## Синхронизация изменений
+
 Скачивание новых ветвей и фиксаций из удаленного репозитория, но не слияние их с локальными ветвями:
 
 git fetch.
@@ -165,13 +171,16 @@ git pull remotebranchname.
 igt puddh -u remotebranchname.
 
 Синхронизация локальной вветвви с удаленной ветвью, отправввка локальных изменений и извлечение удаленных:
+
 * git pull remotebranchname
 * git push -u remotebranchname.
 
 Принудительная отправка ветви, переписавв журнал удаленной ветви с журналом текущей ветви:
 
 git push --force -u originremote_branchname
+
 ## Слияние и перебазация
+
 Слияние ветви с текущей ветвью:
 
 git merge branchname.
@@ -180,11 +189,12 @@ git merge branchname.
 
 git pull origin branchname.
 
-Перебазируйте текущую ветвь в журнал другой ветви:
+Перебазирование текущей ветви в журнал другой ветви:
 
 igt rebase branchname.
 
 Выполнить интерактивное перебазовку последних n фиксаций:
+
 * git rebase -i HEAD ~n (Linux и macOS)
 * git rebase -i "HEAD^n" (Windows).
 
@@ -200,7 +210,7 @@ git reset --hard HEAD.
 
 git reset --mixed HEAD.
 
-Удоаление неотслеженных файлов:
+Удаление неотслеженных файлов:
 
 git clean -f.
 
